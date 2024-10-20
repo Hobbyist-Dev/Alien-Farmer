@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="Style.CSS">
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Alien Farmer</title>
+    </header>
+    <body>
+        <!--The images for the artwork (drawn by me, duh) are imported here.-->
+        <img src="Grass.png" style="display: none;" id="grass">
+        <img src="PlantGrowing.png" style="display: none;" id="herb">
+        <img src="WheatGrown.png" style="display: none;" id="wheat">
+        <img src="EmptyPlot.png" style="display: none;" id="empty">
+        
+        <!--Where the game goes.-->
+        <canvas id="myCanvas1" width="300" height="300"></canvas>
+        <canvas id="myCanvas2" class="bottom" width="300" height="300" style="display: none;"></canvas><br>
+
+        <script src="Canvas1.JS"></script>
+        <script src="Canvas2.JS"></script>
+        <p id="a">No harvests available yet.</p>
+    
+        <button id="Plant" onclick="plant()">Plant seed</button>
+        <button id="Harvest" onclick="harvest()" disabled>Harvest</button>
+        <p id="score">(MuadhCoin) : 0</p><br>
+        <section>
+            <h1 style="background-color: rgba(255, 255, 255, 0.0);">SHOP</h1>
+            <h2>5 score points:</h2>
+            <button id="timeUpgrade" onclick="upgradeTime()" disabled>Decrease Growth Time (-2)</button>
+            <p id="timeversion2million">Current time to grow is 15 seconds.</p>
+            <button id="yieldUpgrade" onclick="upgradeYield()" disabled>Increase Yield (+1)</button>
+            <p id="Jairajisbadatmaths">Current harvest rate is &#8353;1.</p>
+            <h2>50 score points:</h2>
+            <button id="newField" onclick="newField2()" disabled>Purchase New Field</button><br><h2 style="font-size: large;">When purchasing a new field, all upgrades are reset to 0.</h2>
+        </section>
+        <!--Proof this couldn't be stolen code - no one writes this inefficiently! (having a massive style tag)-->
+        <h1 style="margin-bottom: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">BACK STORY</h1>
+        <p style="margin-top: 0px; border-top-right-radius: 0px; border-top-left-radius: 0px;">
+            The year is 2030. According to all major governments, climate 'goals' were supposed to be met by this time. <br><br><i>To keep warming to 1.5 degrees.</i><br>-United Nations<br><br>
+            <i>68% reduction in emissions by 2030.</i><br>-the UK<br><br>
+            <i>Reducing U.S. greenhouse gas emissions 50-52% below 2005 levels in 2030.</i><br>-the USA<br><br>None of these goals were met. The planet was hit by a disastrous comet from venus, punching through the ozone layer in the process. After only 3 months of the sun's radiation freely entering our atmosphere, Antarctica melted. Global temperatures were at an average of 40 degrees Celsius. <br><br>So we explored other options.<br><br>Luckily, while the world awaits for the Tesla rockets, you and a group of other consiring engineers knew what was coming. You sent off on your rocket to comet B-62. Now, you need to find a way to sustain yourself.<br><br>Luckily, this comet sustains life. So your prime objective is to stay alive until the Tesla rockets launch, where you'll catch a ride to Mars with them (because your rocket wasn't quite strong enough to do that on its own).
+        </p>
+            <h1 style="margin-bottom: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">HOW TO PLAY</h1>
+        <p style="margin-top: 0px; border-top-right-radius: 0px; border-top-left-radius: 0px;">
+            Use the 'Plant a seed' button to, well, plant a seed! On comet B-62, they grow significantly faster than on Earth, approximately 14 seconds (or less with a bit of bribery...). Then, hit the 'Harvest' button to collect your crop! Earn points as you increase your farm's efficiency, and learn how to stay alive in this strange new world.<br><br>Good luck, adventurer!
+        </p>
+        <!--Still think this code is too advanced? Have a gander at this copyright statement.-->
+        <footer style="color: aliceblue;">
+            Copyright Muadh Aslam 2024. All contents on this page are the sole property of Muadh except background image which is entitled to 'freepik.com'. Unless granted permission from the author, do not copy or share any of the code embedded on this webpage for any reason.
+        </footer>
+        
+        
+    </body>
+</html>

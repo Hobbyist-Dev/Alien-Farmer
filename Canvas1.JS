@@ -210,3 +210,11 @@ function check() {
     planted2 = false;
   }
 }
+
+function closedd() {
+  document.getElementById("popup").style.display = "none";
+}
+
+function opener() {
+  document.getElementById("popup").style.display = "inline";
+}
